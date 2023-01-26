@@ -17,7 +17,7 @@ class CreateItemsTable extends Migration
             $table->id();
             $table->string('name');
             $table->boolean('completed')->default('false');
-            $table->dateTime('completed_at')->nullable();
+            $table->dateTime('completed_at');
             $table->timestamps();
         });
     }
